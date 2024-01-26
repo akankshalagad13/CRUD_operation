@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "50917143-ce31-4c83-a4ce-80ffd7a9181f",
+		"name": "CRUD operation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "22922253"
+	},
+	"item": [
+		{
+			"name": "getById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/students/"
+			},
+			"response": []
+		},
+		{
+			"name": "fetchdata",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/students/"
+			},
+			"response": []
+		},
+		{
+			"name": "saveStudent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Akanksha Lagad\",\r\n    \"age\": 23,\r\n    \"city\": \"pune\",\r\n    \"marks\": 40\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/students/save"
+			},
+			"response": []
+		},
+		{
+			"name": "savemultiple",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"John Doe\",\r\n    \"age\": 21,\r\n    \"city\": \"pune\",\r\n    \"marks\": 90\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/students/savemultiple"
+			},
+			"response": []
+		},
+		{
+			"name": "updateStudent",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": "http://localhost:8080/api/students/"
+			},
+			"response": []
+		},
+		{
+			"name": "deleteById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/api/students/2"
+			},
+			"response": []
+		}
+	]
+}
